@@ -5,6 +5,7 @@ import Loading from './Loading'
 export default function API() {
     const [showUser, setShowUser] = useState([])
     const [loading, setLoading] = useState(true)
+
     const getUsers = async () => {
         try {
             const response = await fetch("https://api.github.com/users")

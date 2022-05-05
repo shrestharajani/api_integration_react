@@ -5,12 +5,12 @@ body{
   /* background-color: black; */
 }
 
-.main-content{
+/* .main-content{
  display: flex;
  flex-wrap: wrap;
  padding: 10px 60px 0;
  justify-content: space-between;
-}
+} */
 
 h1{
   text-align: center;
@@ -25,13 +25,15 @@ h1{
 .card{
   margin: 20px 0px 20px 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-body{
   display: flex;
   padding: 10px;
   border-radius: 10px;
-  width:26vw;
+  width:70vw;
   height: auto;
   border: 1px solid white;
   background-color: white;
@@ -77,7 +79,7 @@ h1{
   margin-top: 10px;
   display: flex;
   text-align: center;
-  width:18vw;
+  width:45vw;
 }
 
 .git-detail-body{
@@ -95,4 +97,43 @@ h1{
 .git-content{
   display: flex;
   flex-direction: column;
+}
+
+.pagination_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  list-style: none;
+  width: 70%;
+  margin: auto;
+}
+
+.pagination_btn a{
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.pagination_btn a:hover{
+  background-color: blue;
+  color: white;
+}
+
+.active_pagination a{
+  background-color: blue;
+  color: white; 
+}
+
+.pagination_disabled a{
+  cursor:default;
+  background-color: transparent;
+  opacity: 0.3;
+}
+
+.pagination_disabled a:hover{
+  background-color: transparent;
+  color: black;
 }
